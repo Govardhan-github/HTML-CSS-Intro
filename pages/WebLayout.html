@@ -1,0 +1,97 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  header{
+      font-size: 20px;
+      align-content: center;
+  }
+  header{
+    font-size: 20px; 
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: red;
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+    }
+
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 2;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  .footercontainer{
+    display: flex;
+    flex-flow:column wrap;
+    align-content: center;
+    background: rgb(27, 212, 27);
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    }
+  
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+    <header class = "headerContainer"><h1>HEADER</h1></header>
+    <div id="main">
+    <article>
+        <h2>article 1</h2>
+        <p>These examples demonstrate various ways of presenting photos in a photo gallery using flexbox.
+            The em is simply the font size. In an element with a 2in font, 1em thus means 2in. ... Declarations
+            such as text-indent: 1.5em and margin: 1em are extremely common in CSS. The ex unit is rarely used.
+            Its purpose is to express sizes that must be related to the x-height of a font
+        </p>
+    </article>
+    <article>
+        <h2>article 2</h2>
+        <p>These examples demonstrate various ways of presenting photos in a photo gallery using flexbox.
+            The em is simply the font size. In an element with a 2in font, 1em thus means 2in. ... Declarations
+            such as text-indent: 1.5em and margin: 1em are extremely common in CSS. The ex unit is rarely used.
+            Its purpose is to express sizes that must be related to the x-height of a font
+        </p>
+    </article>
+    <article>
+        <h2>article 3</h2>
+        <p>These examples demonstrate various ways of presenting photos in a photo gallery using flexbox.
+            The em is simply the font size. In an element with a 2in font, 1em thus means 2in. ... Declarations
+            such as text-indent: 1.5em and margin: 1em are extremely common in CSS. The ex unit is rarely used.
+            Its purpose is to express sizes that must be related to the x-height of a font
+        </p>
+    </article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer class="footercontainer">Footer</footer>
+</body>
